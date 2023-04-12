@@ -44,6 +44,9 @@ jobs:
           name: API Build
           command: |
             npm run api:build
+      - run:
+          name: Copy Elastic Beanstalk configuration files
+          command: cp -R .elasticbeanstalk www/
   # deploy step will run only after manual approval
   deploy:
     docker:
