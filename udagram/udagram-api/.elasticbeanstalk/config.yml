@@ -1,9 +1,13 @@
 branch-defaults:
   default:
-    environment: Udagram-dev
+    environment: Deployenv2-env
     group_suffix: null
+environment-defaults:
+  Deployenv2-env:
+    branch: null
+    repository: null
 global:
-  application_name: Udagram
+  application_name: Deploy-env2
   branch: null
   default_ec2_keyname: null
   default_platform: Node.js 14 running on 64bit Amazon Linux 2
